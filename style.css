@@ -1,0 +1,342 @@
+/* ==========================================================================
+   Base Reset
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Martian Mono", sans-serif;
+}
+
+/* ==========================================================================
+   Global Utility Classes
+   ========================================================================== */
+.section {
+  max-width: 1180px;
+  margin: 150px auto 0 auto;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #faf5f3;
+  background-image: url("assets/hero/hero-grid-pattern-bg.svg");
+}
+
+.hero__container {
+  padding: 0 6rem;
+}
+
+.hero__header {
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+
+.hero__content {
+  display: flex;
+  gap: 5rem;
+  padding-bottom: 5.6rem;
+}
+
+.hero__text {
+  flex: 1.05;
+  margin-top: 60px;
+}
+
+.hero__title {
+  font-size: 3.8rem;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #d08457, #633d27, #062630, #062630);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__description {
+  margin-top: 22px;
+  font-size: 1.23rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  color: #385159;
+}
+
+.hero__cta-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 1.18rem 1.43rem;
+  border: 2px solid #062630;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  background-color: #fff5ef;
+  color: #062630;
+  font-family: "Martian Mono", sans-serif;
+}
+
+.hero__cta-button:hover {
+  background: linear-gradient(90deg, #FFE2D1, #FFF4EE);
+  cursor: pointer;
+}
+
+.hero__social-proof {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.hero__rating p {
+  font-size: 0.9rem;
+  letter-spacing: -0.8px;
+  color: #385159;
+}
+
+.hero__stars {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.hero__image-container {
+  flex: 0.95;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  transform: scaleY(1.04);
+  transform-origin: top;
+  border-radius: 10px;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  height: 40rem;
+}
+
+/* ==========================================================================
+   FEATURES SECTION
+   ========================================================================== */
+.features__content {
+  display: flex;
+  gap: 5rem;
+  width: 100%;
+}
+
+.features__image {
+  flex: 1;
+}
+
+.features__image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.features__text {
+  flex: 1;
+  margin-top: 40px;
+}
+
+.features__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #062630;
+}
+
+.features__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 2.5rem;
+}
+
+.features__detail {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+}
+
+.features__detail p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #385159;
+  letter-spacing: -0.5px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ==========================================================================
+   COMMUNITY SECTION
+   ========================================================================== */
+.community__content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+}
+
+.community__image {
+  flex: 1;
+  position: relative;
+}
+
+.tech__logos {
+  position: absolute;
+  bottom: 5%;
+  right: 53.5%;
+  height: 9rem;
+}
+
+.community__image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.community__text {
+  flex: 1;
+}
+
+.community__title {
+  font-size: 3.1rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 0.7;
+  color: #062630;
+}
+
+.community__title--highlight img {
+  position: relative;
+  top: 18px;
+  left: -180px;
+}
+
+.community__description {
+  margin-top: 35px;
+  width: 90%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  color: #385159;
+  font-family: "Inter", sans-serif;
+}
+
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
+.footer {
+  margin-top: 100px;
+  border-radius: 15px 15px 0 0;
+  color: white;
+  background: #062630 url("assets/footer-grid-pattern-dark-bg.svg") center/cover
+    no-repeat;
+}
+
+.footer__container {
+  padding: 5rem 5.4rem 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  color: #faf5f3;
+}
+
+.footer__cta-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 1.18rem 1.65rem;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: #062630;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Martian Mono", sans-serif;
+}
+
+.footer__cta-button:hover{
+  background: linear-gradient(90deg, #375058, #072731);
+  cursor: pointer;
+}
+
+.footer__social-proof {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.footer__rating {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer__rating p {
+  font-size: 0.83rem;
+  letter-spacing: -0.8px;
+  color: white;
+}
+
+.footer__stars {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.footer__stars img {
+  width: 27px;
+  height: 27px;
+}
+
+.footer__separator {
+  width: 100%;
+  height: 1px;
+  margin-top: 4.3rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.8rem 1.2rem;
+  margin-top: 25px;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  letter-spacing: -1px;
+  color: #faf5f3;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
